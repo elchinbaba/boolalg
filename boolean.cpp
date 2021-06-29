@@ -69,7 +69,7 @@ int main()
 
 	/*int l = howmuchfalse(D, n);
 	bool **xlit = PCNF(D, n, l);
-	showPKNF(xlit, n, l);*/
+	showPCNF(xlit, n, l);*/
 
 	cout << endl;
 
