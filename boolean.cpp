@@ -15,9 +15,9 @@ using namespace std;
 int main()
 {
 	int n = 3;
-	if (isTau(f, n)) cout << "f funksiyasi tavtologiyadir.";
-	else if (isNOTTau(f, n)) cout << "f funksiyasi eynilikle 0-dir.";
-	else cout << "f funksiyasi sherti-doghru ve sherti-yalandir.";
+	if (isTau(f, n)) cout << "f function is tautology.";
+	else if (isNOTTau(f, n)) cout << "f function is contradiction.";
+	else cout << "f function is logically contingent.";
 	
 	cout << endl << endl;
 
@@ -94,16 +94,16 @@ int main()
 	jeqa *salamm = JEQA(f, n);
 	showJeqa(salamm);
 
-	cout << endl << "x_1-e gore toreme:" << endl;
+	cout << endl << "derivative with respect to x_1:" << endl;
 
 	showJeqa(derivative(salamm, 1));
 
-	cout << endl << "x_2-e gore toreme:" << endl;
+	cout << endl << "derivative with respect to x_2:" << endl;
 
 	salamm = JEQA(f, n);
 	showJeqa(derivative(salamm, 2));
 
-	cout << endl << "x_3-e gore toreme:" << endl;
+	cout << endl << "derivative with respect to x_3:" << endl;
 
 	salamm = JEQA(f, n);
 	showJeqa(derivative(salamm, 3));
@@ -112,7 +112,7 @@ int main()
 	C[0] = 1; C[1] = 3;
 	salamm = JEQA(f, n);
 
-	cout << endl << "C choxlughuna gore toreme:" << endl;
+	cout << endl << "derivative with respect to C:" << endl;
 	showJeqa(derivative(salamm, C, 2));
 
 	system("PAUSE");
